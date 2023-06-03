@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(120deg, red, blue) no-repeat;
+    height: 100vh;
+
+}
+
+.main {
+    background-image: url(./img/spiderLogo.png);
+    background-size: contain;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.spider {
+    display: flex;
+    justify-content: center;
+}
+
+
+.tom-holland {
+    width: 350px;
+    height: 450px;
+    transform: rotate(25deg);
+    transform-origin: top;
+    animation: tom 4s linear infinite;
+
+}
+
+
+@keyframes tom {
+    0% {
+        transform: rotate(5deg);
+    }
+
+    50% {
+        transform: rotate(-5deg);
+    }
+
+    100% {
+        transform: rotate(5deg);
+
+    }
+}
+
+.tom-maguire {
+    width: 450px;
+    height: 450px;
+    animation: maguire 2s linear infinite;
+
+}
+
+@keyframes maguire{
+    0%{
+        margin-top: -20px;
+    }
+
+    50%{
+        margin-top: -50px;
+
+    }
+
+    100%{
+        margin-top: -20px;
+    }
+}
+
+.andrew{
+    height: 550px;
+    width: 550px;
+    animation: andrew 10s linear infinite;
+}
+@keyframes andrew{
+    0%{
+        margin-top: -600px;
+    }
+
+    25%{
+        margin-top: -15px;
+    }
+
+    50%{
+        margin-top: -100px;
+    }
+
+    75%{
+        margin-top: -15px;
+    }
+
+    100%{
+        margin-top: -600px;
+    }
+
+
+}
+
+
+
+
+
+
+
